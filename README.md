@@ -13,7 +13,7 @@ main:
     call printValues(values)     
     initialize tester integers x = 3 and y = 5 
     print x and y 
-    swap(x, y) 
+    call swap(x, y) 
     print x and y 
     call sort(values) 
     print "After: " with new line 
@@ -28,6 +28,7 @@ function sort (values):
             if values[j] > values[j+1]: 
                 swap(values[j], values[j+1]) 
                 call printValues(values) 
+            end if
         end for 
     end for 
 end sort 
